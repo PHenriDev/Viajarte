@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Checkout</title>
+</head>
+
+<body>
+  <header class="container-fluid p-2 bg-success text-center">
+    <section>
+      <nav class=" navbar navbar-expand-lg bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="bi bi-airplane"></i></a>
+          <a class="navbar-brand" href="#">Viajarte</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end bg-success" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Pacotes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Taxas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Contatos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                <li>
+                  <a class="nav-link" href="#"><i class="bi bi-cart2"></i></a>
+                </li>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      </fieldset>
+    </section>
+  </header><br><br>
+  <main class="container">
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span>Seu carrinho</span>
+          <span class="badge bg-success rounded-pill">1</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Pacote</h6>
+              <small class="text-body-secondary">Maragogi</small>
+            </div>
+            <span class="text-body-secondary">R$4.750</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+            <div class="text-success">
+              <h6 class="my-0">Desconto</h6>
+              <small>Promoção Pacote</small>
+            </div>
+            <span class="text-success">−R$1.050</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (R$)</span>
+            <strong>R$3.700</strong>
+          </li>
+        </ul>
+
+        <form>
+        </form>
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Cadastro</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Primeiro nome</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Segundo nome</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email <span class="text-body-secondary"></span></label>
+              <input type="email" class="form-control" id="email" placeholder="email@xyz.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Endereço</label>
+              <input type="text" class="form-control" id="Endereço" placeholder="Rua xyz" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Telefone <span
+                  class="text-body-secondary"></span></label>
+              <input type="text" class="form-control" id="telefone" placeholder="(**)*****-****">
+            </div>
+
+            <div class="col-md-5">
+              <label for="estado" class="form-label">Estado</label>
+              <select class="form-select" id="estado" required>
+                <option value="">Selecione</option>
+                <option value="">Selecione um estado</option>
+                <option value="AC">Acre (AC)</option>
+                <option value="AL">Alagoas (AL)</option>
+                <option value="AP">Amapá (AP)</option>
+                <option value="AM">Amazonas (AM)</option>
+                <option value="BA">Bahia (BA)</option>
+                <option value="CE">Ceará (CE)</option>
+                <option value="DF">Distrito Federal (DF)</option>
+                <option value="ES">Espírito Santo (ES)</option>
+                <option value="GO">Goiás (GO)</option>
+                <option value="MA">Maranhão (MA)</option>
+                <option value="MT">Mato Grosso (MT)</option>
+                <option value="MS">Mato Grosso do Sul (MS)</option>
+                <option value="MG">Minas Gerais (MG)</option>
+                <option value="PA">Pará (PA)</option>
+                <option value="PB">Paraíba (PB)</option>
+                <option value="PR">Paraná (PR)</option>
+                <option value="PE">Pernambuco (PE)</option>
+                <option value="PI">Piauí (PI)</option>
+                <option value="RJ">Rio de Janeiro (RJ)</option>
+                <option value="RN">Rio Grande do Norte (RN)</option>
+                <option value="RS">Rio Grande do Sul (RS)</option>
+                <option value="RO">Rondônia (RO)</option>
+                <option value="RR">Roraima (RR)</option>
+                <option value="SC">Santa Catarina (SC)</option>
+                <option value="SP">São Paulo (SP)</option>
+                <option value="SE">Sergipe (SE)</option>
+                <option value="TO">Tocantins (TO)</option>
+              </select>
+              <div class="invalid-feedback">
+                Selecione seu estado.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">Cidade</label>
+              <select class="form-select" id="Cidade" required>
+                <option value="">Selecione</option>
+                <option value="">Selecione uma cidade</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Belo Horizonte">Belo Horizonte</option>
+                <option value="Brasília">Brasília</option>
+                <option value="Salvador">Salvador</option>
+                <option value="Fortaleza">Fortaleza</option>
+                <option value="Curitiba">Curitiba</option>
+                <option value="Manaus">Manaus</option>
+                <option value="Recife">Recife</option>
+                <option value="Porto Alegre">Porto Alegre</option>
+                <option value="Belém">Belém</option>
+                <option value="Goiânia">Goiânia</option>
+                <option value="São Luís">São Luís</option>
+                <option value="Maceió">Maceió</option>
+                <option value="Natal">Natal</option>
+                <option value="João Pessoa">João Pessoa</option>
+                <option value="Teresina">Teresina</option>
+                <option value="Campo Grande">Campo Grande</option>
+                <option value="Cuiabá">Cuiabá</option>
+                <option value="Aracaju">Aracaju</option>
+                <option value="Vitória">Vitória</option>
+                <option value="Macapá">Macapá</option>
+                <option value="Rio Branco">Rio Branco</option>
+                <option value="Boa Vista">Boa Vista</option>
+                <option value="Palmas">Palmas</option>
+                <option value="São Bernardo do Campo">São Bernardo do Campo</option>
+                <option value="São José dos Campos">São José dos Campos</option>
+                <option value="Santo André">Santo André</option>
+                <option value="Nova Iguaçu">Nova Iguaçu</option>
+                <option value="Duque de Caxias">Duque de Caxias</option>
+                <option value="Campinas">Campinas</option>
+                <option value="São José">São José</option>
+                <option value="Guarulhos">Guarulhos</option>
+                <option value="Diadema">Diadema</option>
+                <option value="Niterói">Niterói</option>
+                <option value="Contagem">Contagem</option>
+                <option value="Juiz de Fora">Juiz de Fora</option>
+                <option value="Sorocaba">Sorocaba</option>
+                <option value="Caxias do Sul">Caxias do Sul</option>
+                <option value="Pelotas">Pelotas</option>
+                <option value="Florianópolis">Florianópolis</option>
+                <option value="Teresópolis">Teresópolis</option>
+              </select>
+              <div class="invalid-feedback">
+                Selecione sua cidade.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">CEP</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">O endereço de envio é o mesmo que o meu endereço de faturação</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Guardar esta informação para a próxima vez</label>
+          </div>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Forma de pagamento</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Cartão de crédito</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Débito</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Nome do cartão</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-body-secondary"></small>
+              <div class="invalid-feedback">
+                É necessário o nome do cartão de crédito
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Número do cartão</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                É necessário o número do cartão de crédito
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Validade</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                É necessário a validade do cartão de crédito
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <a href="" class="btn btn-success btn-lg w-100" data-bs-toggle="modal" data-bs-target="#ModalMara">Finalizar</a>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+<div class="modal" tabindex="-1" id="ModalMara">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Compra realizada com sucesso</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Acesse seu email para mais informações</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <hr>
+  <p>
+      Desenvolvido por Pedro Henrique
+  </p>
+</footer>
+
+</html

@@ -1,0 +1,19 @@
+#AteImg img{
+    width: 100%;
+    height: 27vh;
+    object-fit: cover;
+}
+#imgTwo img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+#Textone {
+    font-size: 20px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+#card {
+    background-color: white;
+    
+}
